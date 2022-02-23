@@ -2,40 +2,40 @@ import Image from "next/image";
 
 const Footer = () => {
     return(
-        <div className="xl:max-w-7xl max-w-2xl mx-auto py-20 grid xl:grid-cols-4 grid-cols-2 gap-10 text-additional-color-200">
+        <div className="xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto py-20 grid xl:grid-cols-4 grid-cols-2 gap-10 text-additional-color-200">
             <div className="flex flex-col gap-6">
                 <div>
                     <img className="bg-additional-color-200 p-2 rounded" width={82} height={37} src="/assets/ecodu.png" alt="logo" />
                 </div>
-                <h4 className="text-lg font-bold">PT Ecodu Pedjuang Harapan</h4>
-                <p className="text-md">Kompleks Kenangan Palace</p>
-                <p className="text-md text-justify">Jalan Kenanga Raya No. B3, Kelurahan Tanjung Sari, Kecamatan Medan Selayang, Kota Medan, Sumatera Utara, 20133 (Depan Kantor Balai PAUD)</p>
+                <h4 className="md:text-lg text-md font-bold">PT Ecodu Pedjuang Harapan</h4>
+                <p className="md:text-md text-sm">Kompleks Kenangan Palace</p>
+                <p className="md:text-md text-sm md:text-justify">Jalan Kenanga Raya No. B3, Kelurahan Tanjung Sari, Kecamatan Medan Selayang, Kota Medan, Sumatera Utara, 20133 (Depan Kantor Balai PAUD)</p>
             </div>
             <div className="flex flex-col gap-4">
-                <h4 className="text-lg font-bold">Produk Ecodu</h4>
+                <h4 className="md:text-lg text-md font-bold">Produk Ecodu</h4>
                 <div className="flex flex-col gap-2">
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out">Bimbel Ecodu STAN</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out">Bimbel Ecodu STIS</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out">Bimbel Ecodu SEKDIN Lainnya</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out">Bimbel Ecodu IPDN</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out">Bimbel Ecodu UTBK</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out">SiapUjian.id</a>
+                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STAN</a>
+                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STIS</a>
+                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu SEKDIN Lainnya</a>
+                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu IPDN</a>
+                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu UTBK</a>
+                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">SiapUjian.id</a>
                 </div>
             </div>
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-3">
-                    <h4 className="text-lg font-bold">Hubungi Kami</h4> 
+                    <h4 className="md:text-lg text-md font-bold">Hubungi Kami</h4> 
                     <div className="flex gap-3 items-center">
                         <div className="w-[32px] h-[32px] bg-[#333]"></div>
-                        <p className="text-md">admin@ecodu.id</p>
+                        <p className="md:text-md text-sm">admin@ecodu.id</p>
                     </div>
                     <div className="flex gap-3 items-center">
                         <div className="w-[32px] h-[32px] bg-[#333]"></div>
-                        <p className="text-md">0811-6016-010</p>
+                        <p className="md:text-md text-sm">0811-6016-010</p>
                     </div>
                 </div>
                 <div className="flex flex-col gap-3">
-                    <h4 className="text-lg font-bold">Sosial Media</h4>
+                    <h4 className="md:text-lg text-md font-bold">Sosial Media</h4>
                     <div className="flex gap-6">
                         <div className="w-[40px] h-[40px] bg-[#333]"></div>
                         <div className="w-[40px] h-[40px] bg-[#333]"></div>
@@ -44,14 +44,14 @@ const Footer = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-3">
-                <h4 className="text-lg font-bold">Toko Buku</h4>
+                <h4 className="md:text-lg text-md font-bold">Toko Buku</h4>
                 <div className="flex gap-3 items-center">
                     <div className="w-[32px] h-[32px] bg-[#333]"></div>
-                    <p className="text-md">Tokopedia</p>
+                    <p className="md:text-md text-sm">Tokopedia</p>
                 </div>
                 <div className="flex gap-3 items-center">
                     <div className="w-[32px] h-[32px] bg-[#333]"></div>
-                    <p className="text-md">Shopee</p>
+                    <p className="md:text-md text-sm">Shopee</p>
                 </div>
                 
             </div>

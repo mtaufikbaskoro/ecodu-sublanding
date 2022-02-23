@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const TestimonialCard = () => {
     return(
-        <div className="bg-additional-color-200 text-primary-color flex flex-col gap-6 w-testimonial-card h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow">
+        <div className="bg-additional-color-200 text-primary-color flex flex-col gap-6 lg:w-testimonial-card h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow">
             <div className="flex gap-3 items-center">
                 <div className="w-32 h-20 overflow-hidden bg-additional-color-300 rounded-full">
                     {/* <Image width={80} height={80} className="rounded-full overflow-hidden" src="/assets/mutiara.png" alt="image-persona" /> */}

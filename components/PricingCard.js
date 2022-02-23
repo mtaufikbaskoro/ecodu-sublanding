@@ -4,14 +4,14 @@ const PricingCard = () => {
     return(
         <div className="flex flex-col gap-5 p-6 bg-primary-color text-additional-color-200 font-semibold rounded-lg drop-shadow-2xl">
             <div className="flex justify-between">
-                <h1 className="text-4xl">Paket A</h1>
+                <h1 className="md:text-4xl text-2xl">Paket A</h1>
                 <div className="flex gap-2">
                     <Banner />
                     <Banner />
                 </div>
             </div>
             <hr />
-            <div className="pr-24 text-lg">
+            <div className="lg:pr-24 md:text-lg text-md">
                 <h4 className="py-2.5">Kamu dapat :</h4>
                 <ul className="list-disc space-y-2.5 pl-6">
                     <li>Lorem ipsum dot mu lorea ni uto siamore</li>
