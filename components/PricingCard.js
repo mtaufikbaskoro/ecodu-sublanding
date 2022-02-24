@@ -6,8 +6,8 @@ const PricingCard = () => {
             <div className="flex justify-between">
                 <h1 className="md:text-4xl text-2xl">Paket A</h1>
                 <div className="flex gap-2">
-                    <Banner />
-                    <Banner />
+                    <Banner title="Best Seller" />
+                    <Banner title="20%" />
                 </div>
             </div>
             <hr />
