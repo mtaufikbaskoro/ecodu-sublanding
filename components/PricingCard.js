@@ -29,7 +29,7 @@ const PricingCard = () => {
                     <p className="text-lg">Rp. 399.000</p>
                 </div>
             </div>
-            <a className="text-center bg-additional-color-300 text-primary-color uppercase py-3.5 rounded-lg font-bold">Daftar</a>
+            <a className="text-center bg-additional-color-300 hover:bg-additional-color-200 text-primary-color uppercase py-3.5 rounded-lg font-bold cursor-pointer transition ease-in-out">Daftar</a>
         </div>
     )
 }
