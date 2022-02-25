@@ -2,6 +2,44 @@ import PricingCard from "../components/PricingCard";
 import { motion } from "framer-motion";
 
 const Pricing = () => {
+    const datas = [
+        {
+            name: 'Paket A',
+            benefits: [
+                'Video On Demand of Lesson Shared',
+                'Mentoring full Provide',
+                '1 Hours per Day',
+            ],
+            price: 200000,
+            disc: 20,
+            status: 'normal'
+        },
+        {
+            name: 'Paket B',
+            benefits: [
+                'Video On Demand of Lesson Shared',
+                'Mentoring full Provide',
+                '2 Hours per Day',
+                'Guarantee 50% Money Back'
+            ],
+            price: 300000,
+            disc: 15,
+            status: 'normal'
+        },
+        {
+            name: 'Paket C',
+            benefits: [
+                'Video On Demand of Lesson Shared',
+                'Mentoring full Provide',
+                '5 Hours per Day',
+                'Guarantee 90% Money Back'
+            ],
+            price: 599000,
+            disc: 'none',
+            status: 'best seller'
+        }
+
+    ]
     return(
         <div className="mt-24 xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto">
             <motion.h1 
@@ -18,9 +56,13 @@ const Pricing = () => {
                 transition={{delay: 0.5}}
                 viewport={{once: true}} 
                 className="mt-24 grid xl:grid-cols-3 xl:gap-10 gap-20">
-                <PricingCard />
-                <PricingCard />
-                <PricingCard />
+                {
+                    datas.map((data, index) => {
+                        return(
+                            <PricingCard key={index} data={data} />
+                        )
+                    })
+                }
             </motion.div>
             <motion.div 
                 initial={{opacity: 0, y:100}}
