@@ -29,7 +29,7 @@ const Contact = () => {
                 viewport={{once: true}} >
                     Hubungi Kami
             </motion.a>
-            <Image src="/assets/stacked-waves.png" layout='fill' className='bottom-0 z-[-9999]' />
+            <Image quality={100} src="/assets/stacked-waves.png" layout='fill' className='bottom-0 z-[-9999]' />
         </div>
     )
 }

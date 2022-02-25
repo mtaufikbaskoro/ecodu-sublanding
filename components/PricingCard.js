@@ -15,10 +15,10 @@ const PricingCard = (props) => {
                     }
                 </div>
             </div>
+            <div className="md:text-lg text-md">
             <hr />
-            <div className="lg:pr-24 md:text-lg text-md">
                 <h4 className="py-2.5">Kamu dapat :</h4>
-                <ul className="list-disc space-y-2.5 pl-6">
+                <ul className="list-disc space-y-2.5 pl-6 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-additional-color-400">
                     {
                         data.benefits.map((benefit, index) => {
                             return(

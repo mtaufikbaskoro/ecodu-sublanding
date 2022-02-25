@@ -44,7 +44,7 @@ export default function Home() {
         <Jumbotron />
       </div>
       <Pricing />
-      <div className="my-16 py-20 bg-primary-color">
+      <div className="mt-56 mb-24 py-20 bg-primary-color">
           <Testimonial />
       </div>
       <div className='relative'>

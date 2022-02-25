@@ -32,10 +32,14 @@ const Pricing = () => {
                 'Video On Demand of Lesson Shared',
                 'Mentoring full Provide',
                 '5 Hours per Day',
-                'Guarantee 90% Money Back'
+                'Guarantee 90% Money Back',
+                'Guarantee 90% Money Back',
+                'Guarantee 90% Money Back',
+                'Guarantee 90% Money Back',
+                'Guarantee 90% Money Back',
             ],
             price: 599000,
-            disc: 'none',
+            disc: 30,
             status: 'best seller'
         }
 
