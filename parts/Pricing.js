@@ -28,7 +28,7 @@ const Pricing = () => {
                 transition={{delay: 0.5}}
                 viewport={{once: true}} 
                 className="my-16 text-center">
-                <a className="text-additional-color-200 text-xs lg:text-lg font-bold bg-primary-color cursor-pointer px-7 py-4 rounded-md hover:underline" href="#">Sudah punya paket belajar ? Klik disini !</a>
+                <a className="text-additional-color-200 text-xs lg:text-lg font-bold bg-additional-color-100 cursor-pointer px-7 py-4 rounded-md hover:underline" href="#">Sudah punya paket belajar ? Klik disini !</a>
             </motion.div>
         </div>
     )

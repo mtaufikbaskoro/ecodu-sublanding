@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react'
+import Image from 'next/image';
 import Head from 'next/head'
 import Jumbotron from '../parts/Jumbotron'
 import Pricing from '../parts/Pricing'
@@ -47,8 +48,11 @@ export default function Home() {
       <div className="my-16 py-20 bg-primary-color">
           <Testimonial />
       </div>
-      <Contact />
-      <div className="bg-additional-color-100 mt-32">
+      <div className='relative'>
+        <Contact />
+        <Image src="/assets/stacked-waves.png" layout='fill' className='bottom-0 z-[-10]' />
+      </div>
+      <div className="bg-additional-color-100 pt-24">
         <Footer />
       </div>
       <MobileMenu toggle={toggle} handleToggle={handleToggle} />

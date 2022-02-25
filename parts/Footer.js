@@ -41,14 +41,14 @@ const Footer = () => {
                 <div className="flex flex-col gap-3">
                     <h4 className="md:text-lg text-md font-bold">Sosial Media</h4>
                     <div className="flex gap-6">
-                        <a href="#" className="w-[40px] h-[40px] bg-[#fff] rounded-full">
-                            <Image src="/assets/facebook.png" width={40} height={40} alt="facebook" />
+                        <a href="#" className="w-[40px] h-[40px] rounded-full">
+                            <Image className="bg-[#fff] rounded-full" src="/assets/facebook.png" width={40} height={40} alt="facebook" />
                         </a>
-                        <a href="#" className="w-[40px] h-[40px] bg-[#fff] rounded-full">
-                            <Image src="/assets/instagram.png" width={40} height={40} alt="instagram" />
+                        <a href="#" className="w-[40px] h-[40px] rounded-full">
+                            <Image className="bg-[#fff] rounded-full" src="/assets/instagram.png" width={40} height={40} alt="instagram" />
                         </a>
-                        <a href="#" className="w-[40px] h-[40px] bg-[#fff] rounded-full">
-                            <Image src="/assets/twitter.png" width={40} height={40} alt="twitter" />
+                        <a href="#" className="w-[40px] h-[40px] rounded-full">
+                            <Image className="bg-[#fff] rounded-full" src="/assets/twitter.png" width={40} height={40} alt="twitter" />
                         </a>
                     </div>
                 </div>
