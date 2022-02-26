@@ -32,6 +32,26 @@ const Testimonial = () => {
             }
         ]
     }
+    const datas = [
+        {
+            name: 'Mutiara Abdiyah',
+            imgUrl: '/assets/testimonials-image/mutiara.png',
+            school: 'Teknik Industri Pertanian IPB - SBMPTN 2021',
+            testimonial: 'Aku belajar di Ecodu seru-seru banget kakak-kakak tentornya. Cara pembelajarannya juga interaktif banget sama siswa-siswanya. Pokoknya the best lah. Sukses selalu Ecodu'
+        },
+        {
+            name: 'Himawan Wahid',
+            imgUrl: '/assets/testimonials-image/himawan.png',
+            school: 'SPMP STIS 2021',
+            testimonial: 'Ecodu mantap video penjelasannya sangat jelas mulai dari 0'
+        },
+        {
+            name: 'Himawan Wahid',
+            imgUrl: '/assets/testimonials-image/himawan.png',
+            school: 'SPMP STIS 2021',
+            testimonial: 'Ecodu mantap video penjelasannya sangat jelas mulai dari 0'
+        }
+    ]
     return(
         <motion.div 
             initial={{opacity: 0, y:100}}
@@ -41,10 +61,13 @@ const Testimonial = () => {
             className="xl:max-w-7xl lg:max-w-2xl max-w-xs mx-auto grid xl:grid-cols-testimonial gap-20">
             <div className="sm:mx-auto xl:mx-0">
                 <Carousel settings={sliderSetting}>
-                    <TestimonialCard />
-                    <TestimonialCard />
-                    <TestimonialCard />
-                    <TestimonialCard />
+                    {
+                        datas.map((data, index) => {
+                            return(
+                                <TestimonialCard key={index} data={data} />
+                            )
+                        })
+                    }
                 </Carousel>
             </div>
             <div className="text-additional-color-200 xl:text-right text-center">
