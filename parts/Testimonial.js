@@ -34,22 +34,22 @@ const Testimonial = () => {
     }
     const datas = [
         {
-            name: 'Mutiara Abdiyah',
-            imgUrl: '/assets/testimonials-image/mutiara.png',
-            school: 'Teknik Industri Pertanian IPB - SBMPTN 2021',
-            testimonial: 'Aku belajar di Ecodu seru-seru banget kakak-kakak tentornya. Cara pembelajarannya juga interaktif banget sama siswa-siswanya. Pokoknya the best lah. Sukses selalu Ecodu'
+            name: 'Choirul Fatah',
+            imgUrl: '/assets/testimoni/ChoirulFatah.png',
+            school: 'DIV Manajemen Keuangan Negara PKN STAN 2021',
+            testimonial: 'Belajar di ecodu sangat seru karena para pengajarnya sangat friendly sehingga kita tidak sungkan dalam bertanya jawab. Di ecodu juga para pengajarnya sangat perhatian.'
         },
         {
-            name: 'Himawan Wahid',
-            imgUrl: '/assets/testimonials-image/himawan.png',
-            school: 'SPMP STIS 2021',
-            testimonial: 'Ecodu mantap video penjelasannya sangat jelas mulai dari 0'
+            name: 'Aulia Maray',
+            imgUrl: '/assets/testimoni/AuliaMaray.png',
+            school: 'DIV Akuntansi Sektor Publik PKN STAN 2021',
+            testimonial: 'Alhamdulillah, terima kasih bimbel Ecodu udah bantuin persiapan serangkaian tes PKN STAN sejak tkk, psikotes, hingga wawancara. Webinarnya mudah banget dimengerti dan tutornya keren-keren! Latihan soalnya juga banyak dan sangat membantu. Once again, thank youu ecodu!'
         },
         {
-            name: 'Himawan Wahid',
-            imgUrl: '/assets/testimonials-image/himawan.png',
-            school: 'SPMP STIS 2021',
-            testimonial: 'Ecodu mantap video penjelasannya sangat jelas mulai dari 0'
+            name: 'Muhammad Hasan Hasibuan',
+            imgUrl: '/assets/testimoni/MuhammadHasan.png',
+            school: 'DIV Manajemen Keuangan Negara PKN STAN 2021',
+            testimonial: 'Buat teman-teman yang mau masuk kedinasan aku rekomendasiin ecodu dah, kalian bakal dibimbing untuk persiapan menuju sekdin yang kalian impikan, kakak kakak tutornya juga ramah, ngejelasin materinya juga cukup rinci,ecodu juga cocok buat kalian yang nyari bimbel online kedinasan dengan harga terjangkau, tapi dapat fasilitas yg cukup baikk, pokoknya toopp dahh.'
         }
     ]
     return(
