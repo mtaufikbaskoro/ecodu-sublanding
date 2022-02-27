@@ -34,6 +34,38 @@ const Jumbotron = () => {
             }
         ]
     }
+    const datas = [
+        {
+            lesson: 'Kesehatan dan Kebugaran',
+            imgUrl: '/assets/materi/kesehatanKebugaran.png',
+            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+        },
+        {
+            lesson: 'Psikotes',
+            imgUrl: '/assets/materi/psikotes.png',
+            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+        },
+        {
+            lesson: 'SKD',
+            imgUrl: '/assets/materi/skd.png',
+            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+        },
+        {
+            lesson: 'TPA dan TBI',
+            imgUrl: '/assets/materi/tpaTbi.png',
+            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+        },
+        {
+            lesson: 'TPS UTBK',
+            imgUrl: '/assets/materi/tpsUtbk.png',
+            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+        },
+        {
+            lesson: 'Wawancara',
+            imgUrl: '/assets/materi/wawancara.png',
+            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+        }
+    ]
     return(
         <div className="xl:max-w-7xl lg:max-w-2xl max-w-sm mx-auto">
             <div className="text-center py-28">
@@ -64,12 +96,11 @@ const Jumbotron = () => {
                     <h2 className="text-primary-color font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left">Materi yang kamu dapetin hari ini</h2>
                     <div className="mx-auto xl:mx-0">
                     <Carousel settings={sliderSettings}>
-                        <Card title="Bahasa Inggris" desc="Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau" />
-                        <Card title="Bahasa Inggris" desc="Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau" />
-                        <Card title="Bahasa Inggris" desc="Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau" />
-                        <Card title="Bahasa Inggris" desc="Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau" />
-                        <Card title="Bahasa Inggris" desc="Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau" />
-                        <Card title="Bahasa Inggris" desc="Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau" />
+                        {
+                            datas.map((data, index) => {
+                                return <Card data={data} key={index} />
+                            })
+                        }
                     </Carousel>
                     </div>
                 </div>

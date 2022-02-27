@@ -2,7 +2,6 @@ import Image from "next/image";
 
 const TestimonialCard = (props) => {
     const {data} = props
-    console.log(data.testimonial.length)
     return(
         <div className="bg-additional-color-200 text-primary-color flex flex-col gap-6 lg:w-testimonial-card w-[320px] h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow">
             <div className="flex gap-3 items-center">

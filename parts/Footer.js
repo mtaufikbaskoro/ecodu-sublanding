@@ -14,12 +14,12 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
                 <h4 className="md:text-lg text-md font-bold">Produk Ecodu</h4>
                 <div className="flex flex-col gap-2">
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STAN</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STIS</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu SEKDIN Lainnya</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu IPDN</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu UTBK</a>
-                    <a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">SiapUjian.id</a>
+                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STAN</a>
+                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STIS</a>
+                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu SEKDIN Lainnya</a>
+                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu IPDN</a>
+                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu UTBK</a>
+                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">SiapUjian.id</a>
                 </div>
             </div>
             <div className="flex flex-col gap-8">
@@ -40,14 +40,14 @@ const Footer = () => {
                 </div>
                 <div className="flex flex-col gap-3">
                     <h4 className="md:text-lg text-md font-bold">Sosial Media</h4>
-                    <div className="flex gap-6">
-                        <a href="#" className="w-[40px] h-[40px] rounded-full">
+                    <div className="flex gap-3">
+                        <a href="#" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
                             <Image className="bg-[#fff] rounded-full" src="/assets/facebook.png" width={40} height={40} alt="facebook" />
                         </a>
-                        <a href="#" className="w-[40px] h-[40px] rounded-full">
+                        <a href="#" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
                             <Image className="bg-[#fff] rounded-full" src="/assets/instagram.png" width={40} height={40} alt="instagram" />
                         </a>
-                        <a href="#" className="w-[40px] h-[40px] rounded-full">
+                        <a href="#" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
                             <Image className="bg-[#fff] rounded-full" src="/assets/twitter.png" width={40} height={40} alt="twitter" />
                         </a>
                     </div>
@@ -55,18 +55,18 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-3">
                 <h4 className="md:text-lg text-md font-bold">Toko Buku</h4>
-                <div className="flex gap-3 items-center">
+                <a href="#" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                     <div className="w-[32px] h-[32px] bg-[#fff] rounded-full">
                         <Image src="/assets/tokopedia.png" width={32} height={32} alt="tokopedia" />
                     </div>
                     <p className="md:text-md text-sm">Tokopedia</p>
-                </div>
-                <div className="flex gap-3 items-center">
+                </a>
+                <a href="#" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                     <div className="w-[32px] h-[32px] bg-[#fff] rounded-full">
                         <Image src="/assets/shopee.png" width={32} height={32} alt="shopee" />
                     </div>
                     <p className="md:text-md text-sm">Shopee</p>
-                </div>
+                </a>
                 
             </div>
         </div>
