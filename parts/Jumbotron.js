@@ -36,35 +36,35 @@ const Jumbotron = () => {
     }
     const datas = [
         {
-            lesson: 'Kesehatan dan Kebugaran',
-            imgUrl: '/assets/materi/kesehatanKebugaran.png',
-            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
-        },
-        {
-            lesson: 'Psikotes',
-            imgUrl: '/assets/materi/psikotes.png',
-            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
-        },
-        {
             lesson: 'SKD',
             imgUrl: '/assets/materi/skd.png',
-            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+            desc: 'Mulai dari TIU (Tes Itelegensia Umum), TWK (Tes Wawasan Kebangsaan) sampai TKP (Tes Karakteristik Pribadi) diajarkan di sini. Lengkap dan anti tersesat pastinya.'
         },
         {
-            lesson: 'TPA dan TBI',
-            imgUrl: '/assets/materi/tpaTbi.png',
-            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
-        },
-        {
-            lesson: 'TPS UTBK',
+            lesson: 'Kelas TPS UTBK',
             imgUrl: '/assets/materi/tpsUtbk.png',
-            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
+            desc: 'Seluruh bagian Tes Potensi Skolastika bakal diajarkan disini. Mulai dari hitungan, logika sampai Bahasa inggris lengkap ada semua disini.'
         },
         {
-            lesson: 'Wawancara',
+            lesson: 'Kelas TPA dan TBI',
+            imgUrl: '/assets/materi/tpaTbi.png',
+            desc: 'Tes Akademik dan Tes Bahasa Inggris tetap kami ajarkan untuk menghadapi hal-hal yang tak terduga di ujian nanti. Siap menghadapi ujian tanpa rasa khawatir.'
+        },
+        {
+            lesson: 'Kelas Psikotes',
+            imgUrl: '/assets/materi/psikotes.png',
+            desc: 'Seluruh materi psikotes juga diajarkan di sini, papikostik, menggambar manusia, wartegg, dan lainnya pasti diajari di sini.'
+        },
+        {
+            lesson: 'Kelas Wawancara',
             imgUrl: '/assets/materi/wawancara.png',
-            desc: 'Lorem ipsum sit dolor containouee su parte un lodaire dot mo tau'
-        }
+            desc: 'Meskipun terkesan mudah, nyatanya bagian ujian satu ini banyak yang gugur. Tapi tenang, di ecodu kamu juga dibimbing menghadapi tahapan satu ini.'
+        },
+        {
+            lesson: 'Kelas Kesehatan dan Kebugaran',
+            imgUrl: '/assets/materi/kesehatanKebugaran.png',
+            desc: 'Kami akan menemani kamu hingga akhir perjuangan. Di Kelas ini kamu akan dibimbing dengan dokter dan juga alumni sekolah kedinasan yang berpengalaman.'
+        },
     ]
     return(
         <div className="xl:max-w-7xl lg:max-w-2xl max-w-sm mx-auto">
@@ -83,7 +83,7 @@ const Jumbotron = () => {
                     transition={{delay: 0.5}}
                     viewport={{once: true}} 
                     className="mt-11 text-additional-color-100 md:text-2xl text-md">
-                    <span className="font-bold uppercase">Ecodu - stan</span> adalah seluruh materi lengkap di Bimbingan Belajar Ecodu dengan metode cara cepat yang akan membuat soal ujian masuk STAN terasa jauh lebih mudah dari yang kamu bayangkan!
+                        Mulai persiapan kamu bareng Ecodu. Dengan <span className="font-bold">sistem Lock-Open</span> yang membuat belajar kamu jadi lebih terarah dan mudah memahami materi apa yang harus duluan kamu kuasai. Membuat soal ujian masuk STAN terasa jauh lebih mudah dari yang kamu bayangkan!
                 </motion.p>
             </div>
             <motion.div
@@ -93,7 +93,7 @@ const Jumbotron = () => {
                 viewport={{once: true}}  
                 className="py-12">
                 <div className="grid xl:grid-cols-lesson-col gap-10 items-center">
-                    <h2 className="text-primary-color font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left">Materi yang kamu dapetin hari ini</h2>
+                    <h2 className="text-primary-color font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left">Jadi Materi yang Kamu Dapatkan di Kelas Ini</h2>
                     <div className="mx-auto xl:mx-0">
                     <Carousel settings={sliderSettings}>
                         {

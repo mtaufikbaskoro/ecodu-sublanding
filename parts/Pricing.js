@@ -16,8 +16,8 @@ const Pricing = () => {
                 'Grup Siswa',
                 'Live Sharing Session Bareng Mahasiswa PTK'
             ],
-            price: 600000,
-            afterDisc: 199000,
+            price: '600.000',
+            afterDisc: '199.000',
             status: 'normal'
         },
         {
@@ -35,8 +35,8 @@ const Pricing = () => {
                 'Live Sharing Session bareng Mahasiswa PTK',
                 'Kelas Latihan Google Classroom'
             ],
-            price: 999000,
-            afterDisc: 259000,
+            price: '999.000',
+            afterDisc: '259.000',
             status: 'Best Deals'
         },
         {
@@ -57,8 +57,8 @@ const Pricing = () => {
                 'Kelas Latihan Google Classroom',
                 'Akses Tanya Pengajar'
             ],
-            price: 1199000,
-            afterDisc: 359000,
+            price: '1.199.000',
+            afterDisc: '359.000',
             status: 'best seller'
         }
 

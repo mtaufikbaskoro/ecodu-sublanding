@@ -71,8 +71,8 @@ const Testimonial = () => {
                 </Carousel>
             </div>
             <div className="text-additional-color-200 xl:text-right text-center">
-                <h1 className="md:text-4xl text-2xl font-semibold">Testimoni</h1>
-                <p className="mt-6 md:text-2xl text-lg">Pengalaman siswa belajar dengan kami</p>
+                <h1 className="md:text-4xl text-2xl font-semibold">Kata Mereka</h1>
+                <p className="mt-6 md:text-2xl text-lg">Yang sudah berjuang dengan kami menuju kampus idamannya</p>
             </div>
         </motion.div>
     )
