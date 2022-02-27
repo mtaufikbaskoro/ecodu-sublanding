@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react'
 import Head from 'next/head'
-import Image from 'next/image';
 import Jumbotron from '../parts/Jumbotron'
 import Pricing from '../parts/Pricing'
 import Testimonial from '../parts/Testimonial'
