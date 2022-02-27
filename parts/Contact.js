@@ -29,7 +29,7 @@ const Contact = () => {
                 viewport={{once: true}} >
                     Hubungi Kami
             </motion.a>
-            <div className='absolute xl:right-0 xl:-bottom-10 -bottom-52 -right-20 z-[-10]'>
+            <div className='absolute xl:right-0 xl:-bottom-10 -bottom-44 -right-20 z-[-10]'>
                 <Image src="/assets/Neco_tryout.png" layout='fixed' width={400} height={400} />
             </div>
         </div>
