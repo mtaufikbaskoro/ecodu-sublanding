@@ -4,42 +4,61 @@ import { motion } from "framer-motion";
 const Pricing = () => {
     const datas = [
         {
-            name: 'Paket A',
+            name: 'SUPER',
             benefits: [
-                'Video On Demand of Lesson Shared',
-                'Mentoring full Provide',
-                '1 Hours per Day',
+                '51 Video Materi TPA & TBI',
+                '70++ Video Materi SKD',
+                '25++ Video Materi TPS',
+                'Pretest & Post Test',
+                '5x Try Out TPA & TBI',
+                '5x Try Out SKD',
+                '5x Try Out TPS',
+                'Grup Siswa',
+                'Live Sharing Session Bareng Mahasiswa PTK'
             ],
-            price: 200000,
-            disc: 20,
+            price: 600000,
+            afterDisc: 199000,
             status: 'normal'
         },
         {
-            name: 'Paket B',
+            name: 'WARRIOR',
             benefits: [
-                'Video On Demand of Lesson Shared',
-                'Mentoring full Provide',
-                '2 Hours per Day',
-                'Guarantee 50% Money Back'
+                '51 Video Materi TPA & TBI',
+                '70++ Video Materi SKD',
+                '25++ Video Materi TPS',
+                '20x Try Out TPA & TBI',
+                '20x Try Out SKD',
+                '20x Try Out TPS',
+                'Pretest & Post Test',
+                'Special Try Out',
+                'Perpustakaan Siswa',
+                'Live Sharing Session bareng Mahasiswa PTK',
+                'Kelas Latihan Google Classroom'
             ],
-            price: 300000,
-            disc: 15,
-            status: 'normal'
+            price: 999000,
+            afterDisc: 259000,
+            status: 'Best Deals'
         },
         {
-            name: 'Paket C',
+            name: 'MASTER',
             benefits: [
-                'Video On Demand of Lesson Shared',
-                'Mentoring full Provide',
-                '5 Hours per Day',
-                'Guarantee 90% Money Back',
-                'Guarantee 90% Money Back',
-                'Guarantee 90% Money Back',
-                'Guarantee 90% Money Back',
-                'Guarantee 90% Money Back',
+                '51 Video Materi TPA & TBI',
+                '70++ Video Materi SKD',
+                '25++ Video Materi TPS',
+                '60x Try Out TPA & TBI',
+                '60x Try Out SKD',
+                '60x Try Out TPS',
+                'Pretest & Post Test',
+                'Special Try Out',
+                'Mastery Program',
+                'Perpustakaan Siswa',
+                'Live Sharing Session bareng Mahasiswa PTK',
+                'Kelas Belajar Via Whatsapp & Zoom',
+                'Kelas Latihan Google Classroom',
+                'Akses Tanya Pengajar'
             ],
-            price: 599000,
-            disc: 30,
+            price: 1199000,
+            afterDisc: 359000,
             status: 'best seller'
         }
 

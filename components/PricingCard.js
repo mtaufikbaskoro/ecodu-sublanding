@@ -8,9 +8,6 @@ const PricingCard = (props) => {
                 <h1 className="md:text-4xl text-2xl">{data.name}</h1>
                 <div className="flex gap-2">
                     {
-                        data.disc !== 'none' ? <Banner title={`${data.disc}%`} /> : <></>
-                    }
-                    {
                         data.status !== 'normal' ? <Banner title={data.status} /> : <></>
                     }
                 </div>
@@ -18,7 +15,7 @@ const PricingCard = (props) => {
             <div className="md:text-lg text-md">
             <hr />
                 <h4 className="py-2.5">Kamu dapat :</h4>
-                <ul className="list-disc space-y-2.5 pl-6 max-h-48 overflow-y-auto scrollbar-thin scrollbar-thumb-additional-color-400">
+                <ul className="list-disc space-y-2.5 pl-6 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-additional-color-400">
                     {
                         data.benefits.map((benefit, index) => {
                             return(
@@ -33,10 +30,10 @@ const PricingCard = (props) => {
                 <h4>Harga Paket</h4>
                 <div className="text-center">
                     {
-                        data.disc !== 'none' ? <p className="line-through decoration-[#8C112A] decoration-4">Rp. {data.price}</p> : <></>
+                        data.disc !== 'none' ? <p className="line-through decoration-[#8C112A] decoration-2 text-lg">Rp. {data.price}</p> : <></>
                     }
                     {
-                        data.disc !== 'none' ? <p className="text-lg">Rp. {data.price - (data.price * data.disc/100)}</p> : <p className="text-lg">Rp. {data.price}</p>
+                        data.afterDisc !== 'none' ? <p className="text-xl">Rp. {data.afterDisc}</p> : <></>
                     }
                 </div>
             </div>
