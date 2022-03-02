@@ -21,7 +21,7 @@ const Contact = () => {
                 Tunggu apalagi ? Ribuan pesaingmu sudah mulai mempersiapkan diri, Kamu masih bingung ? ayo konsultasikan masa depanmu dengan ECODU !
             </motion.p>
             <motion.a 
-                href="#" 
+                href="https://bit.ly/paket-stan-ecodu" 
                 className="mt-6 text-additional-color-200 font-bold bg-additional-color-100 border-4 hover:bg-slate-700 border-dotted cursor-pointer px-10 py-2 rounded-full transition ease-in-out"
                 initial={{opacity: 0, y:100}}
                 whileInView={{opacity: 1, y:0}}

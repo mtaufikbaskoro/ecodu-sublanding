@@ -15,11 +15,10 @@ const Navbar = (props) => {
                 <span className="block w-8 h-1 bg-additional-color-100"></span>
             </div>
             <ul className="lg:flex hidden justify-between uppercase items-center">
-                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3">blog</li>
-                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3">tentang kami</li>
-                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3">produk</li>
-                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3">promo</li>
-                <li className="text-additional-color-200 font-bold bg-additional-color-100 cursor-pointer px-6 py-3 rounded-full">login</li>
+                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3"><a href="https://www.ecodu.id/blog">blog</a></li>
+                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3"><a href="https://www.ecodu.id/">tentang kami</a></li>
+                <li className="text-additional-color-100 font-bold hover:bg-additional-color-100 hover:text-additional-color-200 transition ease-in-out cursor-pointer rounded-md px-6 py-3"><a href="#pricing">Paket</a></li>
+                <li className="text-additional-color-200 font-bold bg-additional-color-100 cursor-pointer px-6 py-3 rounded-full"><a href="https://app.ecodu.id">login</a></li>
             </ul>
         </div>
     )

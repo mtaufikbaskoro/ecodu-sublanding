@@ -25,29 +25,29 @@ const Footer = () => {
             <div className="flex flex-col gap-8">
                 <div className="flex flex-col gap-3">
                     <h4 className="md:text-lg text-md font-bold">Hubungi Kami</h4> 
-                    <div className="flex gap-3 items-center">
+                    <a href="mailto:admin@ecodu.id" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                         <div className="w-[32px] h-[32px]">
                             <Image src="/assets/kontak_email.png" width={32} height={32} alt="kontak_email" />
                         </div>
                         <p className="md:text-md text-sm">admin@ecodu.id</p>
-                    </div>
-                    <div className="flex gap-3 items-center">
+                    </a>
+                    <a href="https://bit.ly/gabung-ecodu" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                         <div className="w-[32px] h-[32px]">
                             <Image src="/assets/kontak_whatsapp.png" width={32} height={32} alt="kontak_email" />
                         </div>
                         <p className="md:text-md text-sm">0811-6016-010</p>
-                    </div>
+                    </a>
                 </div>
                 <div className="flex flex-col gap-3">
                     <h4 className="md:text-lg text-md font-bold">Sosial Media</h4>
                     <div className="flex gap-3">
-                        <a href="#" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
+                        <a href="https://www.facebook.com/ecodu.id" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
                             <Image className="bg-[#fff] rounded-full" src="/assets/facebook.png" width={40} height={40} alt="facebook" />
                         </a>
-                        <a href="#" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
+                        <a href="https://www.instagram.com/ecodu.id" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
                             <Image className="bg-[#fff] rounded-full" src="/assets/instagram.png" width={40} height={40} alt="instagram" />
                         </a>
-                        <a href="#" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
+                        <a href="https://www.twitter.com/ecodu_id" className="flex justify-center items-center w-[60px] h-[60px] rounded hover:bg-additional-color-400 transition ease-in-out">
                             <Image className="bg-[#fff] rounded-full" src="/assets/twitter.png" width={40} height={40} alt="twitter" />
                         </a>
                     </div>
@@ -55,13 +55,13 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-3">
                 <h4 className="md:text-lg text-md font-bold">Toko Buku</h4>
-                <a href="#" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
+                <a href="https://www.tokopedia.com/tokobukuecodu" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                     <div className="w-[32px] h-[32px] bg-[#fff] rounded-full">
                         <Image src="/assets/tokopedia.png" width={32} height={32} alt="tokopedia" />
                     </div>
                     <p className="md:text-md text-sm">Tokopedia</p>
                 </a>
-                <a href="#" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
+                <a href="https://www.shopee.co.id/pedjuangstan" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                     <div className="w-[32px] h-[32px] bg-[#fff] rounded-full">
                         <Image src="/assets/shopee.png" width={32} height={32} alt="shopee" />
                     </div>

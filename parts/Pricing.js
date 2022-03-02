@@ -18,7 +18,8 @@ const Pricing = () => {
             ],
             price: '600.000',
             afterDisc: '199.000',
-            status: 'normal'
+            status: 'normal',
+            link: 'https://bit.ly/super-stan-ecodu'
         },
         {
             name: 'WARRIOR',
@@ -37,7 +38,8 @@ const Pricing = () => {
             ],
             price: '999.000',
             afterDisc: '259.000',
-            status: 'Best Deals'
+            status: 'Best Deals',
+            link: 'https://bit.ly/warrior-stan-ecodu'
         },
         {
             name: 'MASTER',
@@ -59,12 +61,13 @@ const Pricing = () => {
             ],
             price: '1.199.000',
             afterDisc: '359.000',
-            status: 'best seller'
+            status: 'best seller',
+            link: 'https://bit.ly/master-stan-ecodu'
         }
 
     ]
     return(
-        <div className="mt-24 xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto">
+        <div id="pricing" className="mt-24 xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto">
             <motion.h1 
                 initial={{opacity: 0, y:100}}
                 whileInView={{opacity: 1, y:0}}
@@ -93,7 +96,7 @@ const Pricing = () => {
                 transition={{delay: 0.5}}
                 viewport={{once: true}} 
                 className="my-16 text-center">
-                <a className="text-additional-color-200 text-xs lg:text-lg font-bold bg-additional-color-100 cursor-pointer px-7 py-4 rounded-md hover:underline" href="#">Sudah punya paket belajar ? Klik disini !</a>
+                <a href="https://app.ecodu.id" className="text-additional-color-200 text-xs lg:text-lg font-bold bg-additional-color-100 cursor-pointer px-7 py-4 rounded-md hover:underline">Sudah punya paket belajar ? Klik disini !</a>
             </motion.div>
         </div>
     )
