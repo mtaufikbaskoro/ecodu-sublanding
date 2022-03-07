@@ -12,6 +12,7 @@ export default function StanPage(props) {
     const page = 'stan'
     const [toggle, setToggle] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
+    const [classNames, setClassNames] = useState({});
     // const [page, setPage] = useState('stan')
     const [lessons, setLessons] = useState([
         {
@@ -141,6 +142,12 @@ export default function StanPage(props) {
 
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
+        if(page === 'stan'){
+            setClassNames({
+                jumbotron: 'bg-stansah bg-opacity-25 bg-no-repeat bg-cover',
+                testimonial: 'mt-56 py-20 bg-stan-100'
+            })
+        }
         return() => {
         window.removeEventListener("scroll", handleScroll);
         }
@@ -159,12 +166,12 @@ export default function StanPage(props) {
                 <div className={`${scrollPosition > 150 ? "translate-y-24" : ""} fixed -top-24 w-full z-20 bg-additional-color-200 shadow transition ease-in-out`}>
                     <Navbar handleToggle={handleToggle} />
                 </div>
-                <div className={`bg-${page}sah bg-opacity-25 bg-no-repeat bg-cover`}>
+                <div className={classNames.jumbotron}>
                     <Navbar handleToggle={handleToggle} />
                     <Jumbotron page={page} lessons={lessons} />
                 </div>
                 <Pricing pricings={pricings} page={page} />
-                <div className={`mt-56 py-20 bg-${page}-100`}>
+                <div className={classNames.testimonial}>
                     <Testimonial testimonials={testimonials} page={page} />
                 </div>
                 <div className='mt-24 xl:pb-96 pb-20 relative overflow-hidden'>

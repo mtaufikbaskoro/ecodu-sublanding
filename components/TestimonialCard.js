@@ -1,9 +1,18 @@
 import Image from "next/image";
+import {useState, useEffect} from 'react'
 
 const TestimonialCard = (props) => {
     const {data, page} = props
+    const [classNames, setClassNames] = useState({});
+    useEffect(() => {
+        if(page === 'stan'){
+            setClassNames({
+                div: 'bg-additional-color-200 text-stan-100 flex flex-col gap-6 lg:w-testimonial-card w-[320px] h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow'
+            })
+        }
+    }, [])
     return(
-        <div className={`bg-additional-color-200 text-${page}-100 flex flex-col gap-6 lg:w-testimonial-card w-[320px] h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow`}>
+        <div className={classNames.div}>
             <div className="flex gap-3 items-center">
                 <div className="w-20 h-20 relative">
                     <Image className="bg-additional-color-300 rounded-full" width={80} height={80} src={data.imgUrl} alt="image-persona" />

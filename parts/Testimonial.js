@@ -2,6 +2,7 @@ import Carousel from "../components/Slider"
 import TestimonialCard from "../components/TestimonialCard"
 import { motion } from "framer-motion"
 
+
 const Testimonial = (props) => {
     const {testimonials, page} = props;
     const sliderSetting = {

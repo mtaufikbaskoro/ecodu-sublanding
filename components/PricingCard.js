@@ -1,14 +1,20 @@
 import Banner from "./Banner";
-import {useState} from 'react';
+import {useState, useEffect} from 'react';
 
 const PricingCard = (props) => {
     const {data, page} = props;
-    const [theme, setTheme] = useState({
-        text: `text-${page}-100`, 
-        background: `bg-${page}-100`
-    })
+    const [classNames, setClassNames] = useState({});
+    useEffect(() => {
+        if(page === 'stan'){
+            setClassNames({
+                ul: 'list-disc space-y-2.5 pl-6 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-stan-200',
+                div: 'flex flex-col justify-between gap-5 p-6 bg-stan-100 text-additional-color-200 font-semibold rounded-lg drop-shadow-2xl',
+                a: 'text-center bg-additional-color-300 hover:bg-additional-color-200 text-stan-100 uppercase py-3.5 rounded-lg font-bold cursor-pointer transition ease-in-out'
+            })
+        }
+    }, [])
     return(
-        <div className={`flex flex-col justify-between gap-5 p-6 ${theme.background} text-additional-color-200 font-semibold rounded-lg drop-shadow-2xl`}>
+        <div className={classNames.div}>
             <div className="flex justify-between">
                 <h1 className="md:text-4xl text-2xl">{data.name}</h1>
                 <div className="flex gap-2">
@@ -20,7 +26,7 @@ const PricingCard = (props) => {
             <div className="md:text-lg text-md">
             <hr />
                 <h4 className="py-2.5">Kamu dapat :</h4>
-                <ul className={`list-disc space-y-2.5 pl-6 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-${page}-200`}>
+                <ul className={classNames.ul}>
                     {
                         data.benefits.map((benefit, index) => {
                             return(
@@ -42,7 +48,7 @@ const PricingCard = (props) => {
                     }
                 </div>
             </div>
-            <a href={data.link} className={`text-center bg-additional-color-300 hover:bg-additional-color-200 text-${page}-100 uppercase py-3.5 rounded-lg font-bold cursor-pointer transition ease-in-out`}>Daftar</a>
+            <a href={data.link} className={classNames.a}>Daftar</a>
         </div>
     )
 }

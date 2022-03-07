@@ -2,10 +2,19 @@ import slider from "react-slick/lib/slider";
 import Card from "../components/Card";
 import Carousel from '../components/Slider';
 import {motion} from 'framer-motion'
+import { useEffect, useState } from "react";
 
 
 const Jumbotron = (props) => {
     const { page, lessons } = props;
+    const [classNames, setClassNames] = useState({});
+    useEffect(() => {
+        if(page === 'stan'){
+            setClassNames({
+                h1: 'text-stan-100 font-bold md:text-4xl text-2xl uppercase'
+            })
+        }
+    }, [])
     const sliderSettings = {
         dots: true,
         infinite: true,
@@ -43,7 +52,7 @@ const Jumbotron = (props) => {
                     whileInView={{opacity: 1, y:0}}
                     transition={{delay: 0.2}}
                     viewport={{once: true}} 
-                    className={`text-${page}-100 font-bold md:text-4xl text-2xl uppercase`}>
+                    className={classNames.h1}>
                     Ecodu - Stan
                 </motion.h1>
                 <motion.p 

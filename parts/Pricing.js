@@ -1,12 +1,17 @@
 import PricingCard from "../components/PricingCard";
 import { motion } from "framer-motion";
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
 
 const Pricing = (props) => {
     const {pricings, page} = props
-    const [theme, setTheme] = useState({
-        text: `text-${page}-100`
-    })
+    const [classNames, setClassNames] = useState({});
+    useEffect(() => {
+        if(page === 'stan'){
+            setClassNames({
+                h1: 'md:text-4xl text-2xl text-center text-stan-100 font-bold'
+            })
+        }
+    }, [])
     return(
         <div id="pricing" className="mt-24 xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto">
             <motion.h1 
@@ -14,7 +19,7 @@ const Pricing = (props) => {
                 whileInView={{opacity: 1, y:0}}
                 transition={{delay: 0.2}}
                 viewport={{once: true}} 
-                className={`md:text-4xl text-2xl text-center ${theme.text} font-bold`}>
+                className={`md:text-4xl text-2xl text-center ${classNames.h1} font-bold`}>
                 Pilihan Paket Belajar
             </motion.h1>
             <motion.div 
