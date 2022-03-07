@@ -13,6 +13,10 @@ const Jumbotron = (props) => {
             setClassNames({
                 h1: 'text-stan-100 font-bold md:text-4xl text-2xl uppercase'
             })
+        }else if(page === 'ipdn'){
+            setClassNames({
+                h1: 'text-ipdn-100 font-bold md:text-4xl text-2xl uppercase'
+            })
         }
     }, [])
     const sliderSettings = {
@@ -53,7 +57,7 @@ const Jumbotron = (props) => {
                     transition={{delay: 0.2}}
                     viewport={{once: true}} 
                     className={classNames.h1}>
-                    Ecodu - Stan
+                    Ecodu - <span className="uppercase">{page}</span>
                 </motion.h1>
                 <motion.p 
                     initial={{opacity: 0, y:100}}
@@ -61,7 +65,7 @@ const Jumbotron = (props) => {
                     transition={{delay: 0.5}}
                     viewport={{once: true}} 
                     className="mt-11 text-additional-color-100 md:text-2xl text-md">
-                        Mulai persiapan kamu bareng Ecodu. Dengan <span className="font-bold">sistem Lock-Open</span> yang membuat belajar kamu jadi lebih terarah dan mudah memahami materi apa yang harus duluan kamu kuasai. Membuat soal ujian masuk STAN terasa jauh lebih mudah dari yang kamu bayangkan!
+                        Mulai persiapan kamu bareng Ecodu. Dengan <span className="font-bold">sistem Lock-Open</span> yang membuat belajar kamu jadi lebih terarah dan mudah memahami materi apa yang harus duluan kamu kuasai. Membuat soal ujian masuk <span className="uppercase">{page}</span> terasa jauh lebih mudah dari yang kamu bayangkan!
                 </motion.p>
             </div>
             <motion.div

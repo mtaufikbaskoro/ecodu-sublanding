@@ -35,6 +35,8 @@ module.exports = {
       },
       backgroundImage: {
         'stansah': "url('/assets/stansah.jpg')",
+        'ipdnsah': "url('/assets/ipdnsah.png')",
+        'stissah': ""
       },
       gridTemplateColumns: {
         'lesson-col': '0.3fr 1fr',

@@ -1,14 +1,18 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image';
-import {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react'
 
 const Contact = (props) => {
-    const {page} = props
+    const {page, linkref} = props
     const [classNames, setClassNames] = useState({});
     useEffect(() => {
         if(page === 'stan'){
             setClassNames({
                 h2: 'md:text-4xl text-2xl text-stan-100 font-bold'
+            })
+        }else if(page === 'ipdn'){
+            setClassNames({
+                h2: 'md:text-4xl text-2xl text-ipdn-100 font-bold'
             })
         }
     }, [])
@@ -31,7 +35,7 @@ const Contact = (props) => {
                 Tunggu apalagi ? Ribuan pesaingmu sudah mulai mempersiapkan diri, Kamu masih bingung ? ayo konsultasikan masa depanmu dengan ECODU !
             </motion.p>
             <motion.a 
-                href="https://bit.ly/paket-stan-ecodu" 
+                href={linkref} 
                 className="mt-6 text-additional-color-200 font-bold bg-additional-color-100 border-4 hover:bg-slate-700 border-dotted cursor-pointer px-10 py-2 rounded-full transition ease-in-out"
                 initial={{opacity: 0, y:100}}
                 whileInView={{opacity: 1, y:0}}

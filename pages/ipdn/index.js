@@ -9,41 +9,31 @@ import Footer from '../../parts/Footer';
 import MobileMenu from '../../components/MobileMenu';
 
 export default function StanPage(props) {
-    const page = 'stan'
+    const page = 'ipdn'
     const [toggle, setToggle] = useState(false);
     const [scrollPosition, setScrollPosition] = useState(0);
     const [classNames, setClassNames] = useState({});
-    const [consultLink, setConsultLink] = useState('https://bit.ly/paket-stan-ecodu');
+    const [consultLink, setConsultLink] = useState('https://bit.ly/paket-ipdn-ecodu');
     // const [page, setPage] = useState('stan')
     const [lessons, setLessons] = useState([
         {
             lesson: 'SKD',
-            imgUrl: '/assets/stan/materi/skd.png',
+            imgUrl: '/assets/ipdn/materi/SKD.png',
             desc: 'Mulai dari TIU (Tes Itelegensia Umum), TWK (Tes Wawasan Kebangsaan) sampai TKP (Tes Karakteristik Pribadi) diajarkan di sini. Lengkap dan anti tersesat pastinya.'
         },
         {
-            lesson: 'Kelas TPS UTBK',
-            imgUrl: '/assets/stan/materi/tpsUtbk.png',
-            desc: 'Seluruh bagian Tes Potensi Skolastika bakal diajarkan disini. Mulai dari hitungan, logika sampai Bahasa inggris lengkap ada semua disini.'
-        },
-        {
-            lesson: 'Kelas TPA dan TBI',
-            imgUrl: '/assets/stan/materi/tpaTbi.png',
-            desc: 'Tes Akademik dan Tes Bahasa Inggris tetap kami ajarkan untuk menghadapi hal-hal yang tak terduga di ujian nanti. Siap menghadapi ujian tanpa rasa khawatir.'
-        },
-        {
             lesson: 'Kelas Psikotes',
-            imgUrl: '/assets/stan/materi/psikotes.png',
+            imgUrl: '/assets/ipdn/materi/Psikotes.png',
             desc: 'Seluruh materi psikotes juga diajarkan di sini, papikostik, menggambar manusia, wartegg, dan lainnya pasti diajari di sini.'
         },
         {
             lesson: 'Kelas Wawancara',
-            imgUrl: '/assets/stan/materi/wawancara.png',
+            imgUrl: '/assets/ipdn/materi/Wawancara.png',
             desc: 'Meskipun terkesan mudah, nyatanya bagian ujian satu ini banyak yang gugur. Tapi tenang, di ecodu kamu juga dibimbing menghadapi tahapan satu ini.'
         },
         {
             lesson: 'Kelas Kesehatan dan Kebugaran',
-            imgUrl: '/assets/stan/materi/kesehatanKebugaran.png',
+            imgUrl: '/assets/ipdn/materi/KesehatanKebugaran.png',
             desc: 'Kami akan menemani kamu hingga akhir perjuangan. Di Kelas ini kamu akan dibimbing dengan dokter dan juga alumni sekolah kedinasan yang berpengalaman.'
         },
     ])
@@ -51,30 +41,22 @@ export default function StanPage(props) {
         {
             name: 'SUPER',
             benefits: [
-                '51 Video Materi TPA & TBI',
                 '70++ Video Materi SKD',
-                '25++ Video Materi TPS',
                 'Pretest & Post Test',
-                '5x Try Out TPA & TBI',
                 '5x Try Out SKD',
-                '5x Try Out TPS',
                 'Grup Siswa',
                 'Live Sharing Session Bareng Mahasiswa PTK'
             ],
             price: '600.000',
             afterDisc: '199.000',
             status: 'normal',
-            link: 'https://bit.ly/super-stan-ecodu'
+            link: 'https://bit.ly/super-ipdn-ecodu'
         },
         {
             name: 'WARRIOR',
             benefits: [
-                '51 Video Materi TPA & TBI',
                 '70++ Video Materi SKD',
-                '25++ Video Materi TPS',
-                '20x Try Out TPA & TBI',
                 '20x Try Out SKD',
-                '20x Try Out TPS',
                 'Pretest & Post Test',
                 'Special Try Out',
                 'Perpustakaan Siswa',
@@ -84,17 +66,13 @@ export default function StanPage(props) {
             price: '999.000',
             afterDisc: '259.000',
             status: 'Best Deals',
-            link: 'https://bit.ly/warrior-stan-ecodu'
+            link: 'https://bit.ly/warrior-ipdn-ecodu'
         },
         {
             name: 'MASTER',
             benefits: [
-                '51 Video Materi TPA & TBI',
                 '70++ Video Materi SKD',
-                '25++ Video Materi TPS',
-                '60x Try Out TPA & TBI',
                 '60x Try Out SKD',
-                '60x Try Out TPS',
                 'Pretest & Post Test',
                 'Special Try Out',
                 'Mastery Program',
@@ -107,28 +85,28 @@ export default function StanPage(props) {
             price: '1.199.000',
             afterDisc: '359.000',
             status: 'best seller',
-            link: 'https://bit.ly/master-stan-ecodu'
+            link: 'https://bit.ly/master-ipdn-ecodu'
         }
     ])
     const [testimonials, setTestimonials] = useState([
         {
-            name: 'Choirul Fatah',
-            imgUrl: '/assets/stan/testimoni/ChoirulFatah.png',
-            school: 'DIV Manajemen Keuangan Negara PKN STAN 2021',
-            testimonial: 'Belajar di ecodu sangat seru karena para pengajarnya sangat friendly sehingga kita tidak sungkan dalam bertanya jawab. Di ecodu juga para pengajarnya sangat perhatian.'
+            name: 'Aditya Fadhil Hawari Ifat',
+            imgUrl: '/assets/ipdn/testimoni/aditya.png',
+            school: 'SPCP IPDN 2021',
+            testimonial: 'Ecodu sangat membantu kak dalam hal tes kedinasan yang saya jalanin, mulai dari latihan soal dan beberapa tips dan trick yang diberikan serta video pembelajaran via zoom dan dari youtube yang sangat membantu kak.'
         },
         {
-            name: 'Aulia Maray',
-            imgUrl: '/assets/stan/testimoni/AuliaMaray.png',
-            school: 'DIV Akuntansi Sektor Publik PKN STAN 2021',
-            testimonial: 'Alhamdulillah, terima kasih bimbel Ecodu udah bantuin persiapan serangkaian tes PKN STAN sejak tkk, psikotes, hingga wawancara. Webinarnya mudah banget dimengerti dan tutornya keren-keren! Latihan soalnya juga banyak dan sangat membantu. Once again, thank youu ecodu!'
+            name: 'Alif Afadhil Ansani',
+            imgUrl: '/assets/ipdn/testimoni/alif.png',
+            school: 'SPCP IPDN 2021',
+            testimonial: 'Ingin mengucapkan terimakasih buat Ecodu telah memberikan ilmu dan motivasi yang bermanfaat bagi saya, tutor pembelajarannya juga sangat mudah dipahami dan memiliki latihan-latihan soal dan try out yang banyak. Semoga Ecodu sukses selalu.'
         },
         {
-            name: 'Muhammad Hasan Hasibuan',
-            imgUrl: '/assets/stan/testimoni/MuhammadHasan.png',
-            school: 'DIV Manajemen Keuangan Negara PKN STAN 2021',
-            testimonial: 'Buat teman-teman yang mau masuk kedinasan aku rekomendasiin ecodu dah, kalian bakal dibimbing untuk persiapan menuju sekdin yang kalian impikan, kakak kakak tutornya juga ramah, ngejelasin materinya juga cukup rinci,ecodu juga cocok buat kalian yang nyari bimbel online kedinasan dengan harga terjangkau, tapi dapat fasilitas yg cukup baikk, pokoknya toopp dahh.'
-        }
+            name: 'Nur Indah Fitri Kaimuddin',
+            imgUrl: '/assets/ipdn/testimoni/indah.png',
+            school: 'SPCP IPDN 2021',
+            testimonial: 'Ikut bimbel di Ecodu sangat membantu aku berhasil masuk sekolah kedinasan impian aku yaitu IPDN, karena disini kita dibimbing dari tes skd, hingga pengumuman calon praja ipdn 32 (keren gak tuh) selain itu fasilitas yang didapat banyak dan harganya cukup terjangkau loh dan kakak kakak pengajarnya dengan sabar mengajarkan hingga aku betul betul paham materi materi skd, thanks ya Ecodu !!'
+        },
     ])
 
   
@@ -144,8 +122,8 @@ export default function StanPage(props) {
     useEffect(() => {
         window.addEventListener("scroll", handleScroll);
         setClassNames({
-            jumbotron: 'bg-stansah bg-opacity-25 bg-no-repeat bg-cover',
-            testimonial: 'mt-56 py-20 bg-stan-100'
+            jumbotron: 'bg-ipdnsah bg-opacity-25 bg-no-repeat bg-cover',
+            testimonial: 'mt-56 py-20 bg-ipdn-100'
         })
         return() => {
         window.removeEventListener("scroll", handleScroll);
@@ -155,7 +133,7 @@ export default function StanPage(props) {
     return (
         <div className='relative min-h-[100vh]'>
             <Head>
-                <title>Ecodu.id - STAN</title>
+                <title>Ecodu.id - IPDN</title>
                 <meta name="description" content="Generated by create next app" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

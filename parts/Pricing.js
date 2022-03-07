@@ -10,6 +10,10 @@ const Pricing = (props) => {
             setClassNames({
                 h1: 'md:text-4xl text-2xl text-center text-stan-100 font-bold'
             })
+        }else if(page === 'ipdn'){
+            setClassNames({
+                h1: 'md:text-4xl text-2xl text-center text-ipdn-100 font-bold'
+            })
         }
     }, [])
     return(

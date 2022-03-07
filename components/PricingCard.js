@@ -11,6 +11,12 @@ const PricingCard = (props) => {
                 div: 'flex flex-col justify-between gap-5 p-6 bg-stan-100 text-additional-color-200 font-semibold rounded-lg drop-shadow-2xl',
                 a: 'text-center bg-additional-color-300 hover:bg-additional-color-200 text-stan-100 uppercase py-3.5 rounded-lg font-bold cursor-pointer transition ease-in-out'
             })
+        }else if(page === 'ipdn'){
+            setClassNames({
+                ul: 'list-disc space-y-2.5 pl-6 max-h-72 overflow-y-auto scrollbar-thin scrollbar-thumb-ipdn-200',
+                div: 'flex flex-col justify-between gap-5 p-6 bg-ipdn-100 text-additional-color-200 font-semibold rounded-lg drop-shadow-2xl',
+                a: 'text-center bg-additional-color-300 hover:bg-additional-color-200 text-ipdn-100 uppercase py-3.5 rounded-lg font-bold cursor-pointer transition ease-in-out'
+            })
         }
     }, [])
     return(
