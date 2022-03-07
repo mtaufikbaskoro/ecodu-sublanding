@@ -1,71 +1,12 @@
 import PricingCard from "../components/PricingCard";
 import { motion } from "framer-motion";
+import {useState} from 'react'
 
-const Pricing = () => {
-    const datas = [
-        {
-            name: 'SUPER',
-            benefits: [
-                '51 Video Materi TPA & TBI',
-                '70++ Video Materi SKD',
-                '25++ Video Materi TPS',
-                'Pretest & Post Test',
-                '5x Try Out TPA & TBI',
-                '5x Try Out SKD',
-                '5x Try Out TPS',
-                'Grup Siswa',
-                'Live Sharing Session Bareng Mahasiswa PTK'
-            ],
-            price: '600.000',
-            afterDisc: '199.000',
-            status: 'normal',
-            link: 'https://bit.ly/super-stan-ecodu'
-        },
-        {
-            name: 'WARRIOR',
-            benefits: [
-                '51 Video Materi TPA & TBI',
-                '70++ Video Materi SKD',
-                '25++ Video Materi TPS',
-                '20x Try Out TPA & TBI',
-                '20x Try Out SKD',
-                '20x Try Out TPS',
-                'Pretest & Post Test',
-                'Special Try Out',
-                'Perpustakaan Siswa',
-                'Live Sharing Session bareng Mahasiswa PTK',
-                'Kelas Latihan Google Classroom'
-            ],
-            price: '999.000',
-            afterDisc: '259.000',
-            status: 'Best Deals',
-            link: 'https://bit.ly/warrior-stan-ecodu'
-        },
-        {
-            name: 'MASTER',
-            benefits: [
-                '51 Video Materi TPA & TBI',
-                '70++ Video Materi SKD',
-                '25++ Video Materi TPS',
-                '60x Try Out TPA & TBI',
-                '60x Try Out SKD',
-                '60x Try Out TPS',
-                'Pretest & Post Test',
-                'Special Try Out',
-                'Mastery Program',
-                'Perpustakaan Siswa',
-                'Live Sharing Session bareng Mahasiswa PTK',
-                'Kelas Belajar Via Whatsapp & Zoom',
-                'Kelas Latihan Google Classroom',
-                'Akses Tanya Pengajar'
-            ],
-            price: '1.199.000',
-            afterDisc: '359.000',
-            status: 'best seller',
-            link: 'https://bit.ly/master-stan-ecodu'
-        }
-
-    ]
+const Pricing = (props) => {
+    const {pricings, page} = props
+    const [theme, setTheme] = useState({
+        text: `text-${page}-100`
+    })
     return(
         <div id="pricing" className="mt-24 xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto">
             <motion.h1 
@@ -73,7 +14,7 @@ const Pricing = () => {
                 whileInView={{opacity: 1, y:0}}
                 transition={{delay: 0.2}}
                 viewport={{once: true}} 
-                className="md:text-4xl text-2xl text-center text-primary-color font-bold">
+                className={`md:text-4xl text-2xl text-center ${theme.text} font-bold`}>
                 Pilihan Paket Belajar
             </motion.h1>
             <motion.div 
@@ -83,9 +24,9 @@ const Pricing = () => {
                 viewport={{once: true}} 
                 className="mt-24 grid xl:grid-cols-3 xl:gap-10 gap-20">
                 {
-                    datas.map((data, index) => {
+                    pricings.map((data, index) => {
                         return(
-                            <PricingCard key={index} data={data} />
+                            <PricingCard key={index} data={data} page={page} />
                         )
                     })
                 }

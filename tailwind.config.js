@@ -7,15 +7,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary-color': '#214094',
+        'stan': {
+          '100': '#214094',
+          '200': '#8C8DB9',
+        },
+        'ipdn': {
+          '100': '#1D94DE',
+          '200': '#2F4858',
+        },
+        'sekdin': {
+          '100': '#199D54',
+          '200': '#2F4858',
+        },
+        'stis': {
+          '100': '#da4444',
+          '200': '#2F4858',
+        },
+        'utbk': {
+          '100': '#ED7D31',
+          '200': '#2F4858',
+          '300': '#03989E',
+        },
         'additional-color-100': '#5257A2',
         'additional-color-200': '#F8F8FF',
         'additional-color-300': '#F1F1E6',
-        'additional-color-400': '#8C8DB9',
 
       },
       backgroundImage: {
-        'hero': "url('/assets/stansah.jpg')",
+        'stansah': "url('/assets/stansah.jpg')",
       },
       gridTemplateColumns: {
         'lesson-col': '0.3fr 1fr',

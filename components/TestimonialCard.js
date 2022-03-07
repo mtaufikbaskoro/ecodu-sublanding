@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const TestimonialCard = (props) => {
-    const {data} = props
+    const {data, page} = props
     return(
-        <div className="bg-additional-color-200 text-primary-color flex flex-col gap-6 lg:w-testimonial-card w-[320px] h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow">
+        <div className={`bg-additional-color-200 text-${page}-100 flex flex-col gap-6 lg:w-testimonial-card w-[320px] h-lesson-card rounded px-5 py-4 border-4 border-additional-color-100 shadow`}>
             <div className="flex gap-3 items-center">
                 <div className="w-20 h-20 relative">
                     <Image className="bg-additional-color-300 rounded-full" width={80} height={80} src={data.imgUrl} alt="image-persona" />

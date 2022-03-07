@@ -1,7 +1,8 @@
 import {motion} from 'framer-motion'
 import Image from 'next/image';
 
-const Contact = () => {
+const Contact = (props) => {
+    const {page} = props
     return(
         <div className="xl:max-w-7xl md:max-w-2xl max-w-xs mx-auto py-40 flex flex-col justify-center items-center text-center relative">
             <motion.h2
@@ -9,7 +10,7 @@ const Contact = () => {
                 whileInView={{opacity: 1, y:0}}
                 transition={{delay: 0.2}}
                 viewport={{once: true}} 
-                className="md:text-4xl text-2xl text-primary-color font-bold">
+                className={`md:text-4xl text-2xl text-${page}-100 font-bold`}>
                     Singkatnya Kualitas Layanan setara dengan Elite Class di Bimbel Offline Masuk Perguruan Tinggi seharga 8 - 20 Juta++
             </motion.h2>
             <motion.p 
