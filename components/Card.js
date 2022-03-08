@@ -13,6 +13,10 @@ const Card = (props) => {
             setClassNames({
                 div: 'xl:w-lesson-card md:w-[200px] mx-2 md:mx-0 flex flex-col items-center justify-start gap-6 bg-ipdn-100 text-additional-color-200 hover:bg-additional-color-200 hover:text-ipdn-100 border-4 hover:border-4 hover:border-ipdn-200 transition ease-in-out rounded-md'
             })
+        }else if(page === 'sekdin'){
+            setClassNames({
+                div: 'xl:w-lesson-card md:w-[200px] mx-2 md:mx-0 flex flex-col items-center justify-start gap-6 bg-sekdin-100 text-additional-color-200 hover:bg-additional-color-200 hover:text-sekdin-100 border-4 hover:border-4 hover:border-sekdin-200 transition ease-in-out rounded-md'
+            })
         }
     }, [])
     return(

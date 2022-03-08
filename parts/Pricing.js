@@ -14,6 +14,10 @@ const Pricing = (props) => {
             setClassNames({
                 h1: 'md:text-4xl text-2xl text-center text-ipdn-100 font-bold'
             })
+        }else if(page === 'sekdin'){
+            setClassNames({
+                h1: 'md:text-4xl text-2xl text-center text-sekdin-100 font-bold'
+            })
         }
     }, [])
     return(

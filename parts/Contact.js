@@ -14,6 +14,10 @@ const Contact = (props) => {
             setClassNames({
                 h2: 'md:text-4xl text-2xl text-ipdn-100 font-bold'
             })
+        }else if(page === 'sekdin'){
+            setClassNames({
+                h2: 'md:text-4xl text-2xl text-sekdin-100 font-bold'
+            })
         }
     }, [])
     return(

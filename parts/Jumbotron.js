@@ -11,11 +11,18 @@ const Jumbotron = (props) => {
     useEffect(() => {
         if(page === 'stan'){
             setClassNames({
-                h1: 'text-stan-100 font-bold md:text-4xl text-2xl uppercase'
+                h1: 'text-stan-100 font-bold md:text-4xl text-2xl uppercase',
+                h2: 'text-stan-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
             })
         }else if(page === 'ipdn'){
             setClassNames({
-                h1: 'text-ipdn-100 font-bold md:text-4xl text-2xl uppercase'
+                h1: 'text-ipdn-100 font-bold md:text-4xl text-2xl uppercase',
+                h2: 'text-ipdn-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
+            })
+        }else if(page === 'sekdin'){
+            setClassNames({
+                h1: 'text-sekdin-100 font-bold md:text-4xl text-2xl uppercase',
+                h2: 'text-sekdin-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
             })
         }
     }, [])
@@ -75,7 +82,7 @@ const Jumbotron = (props) => {
                 viewport={{once: true}}  
                 className="py-12">
                 <div className="grid xl:grid-cols-lesson-col gap-10 items-center">
-                    <h2 className={`text-${page}-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left`}>Jadi Materi yang Kamu Dapatkan di Kelas Ini</h2>
+                    <h2 className={classNames.h2}>Jadi Materi yang Kamu Dapatkan di Kelas Ini</h2>
                     <div className="mx-auto xl:mx-0">
                     <Carousel settings={sliderSettings}>
                         {
