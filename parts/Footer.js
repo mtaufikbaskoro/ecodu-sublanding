@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
     return(
@@ -14,12 +15,12 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
                 <h4 className="md:text-lg text-md font-bold">Produk Ecodu</h4>
                 <div className="flex flex-col gap-2">
-                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STAN</a>
-                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STIS</a>
-                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu SEKDIN Lainnya</a>
-                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu IPDN</a>
-                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu UTBK</a>
-                    <a href="#" className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">SiapUjian.id</a>
+                    <Link href="/stan"><a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STAN</a></Link>
+                    <Link href="/stis"><a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu STIS</a></Link>
+                    <Link href="/sekdin"><a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu SEKDIN Lainnya</a></Link>
+                    <Link href="/ipdn"><a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu IPDN</a></Link>
+                    <Link href="/utbk"><a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">Bimbel Ecodu UTBK</a></Link>
+                    <Link href="https://siapujian.id"><a className="hover:bg-additional-color-400 p-3 cursor-pointer transition ease-in-out md:text-md text-sm">SiapUjian.id</a></Link>
                 </div>
             </div>
             <div className="flex flex-col gap-8">
