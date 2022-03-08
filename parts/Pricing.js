@@ -22,6 +22,10 @@ const Pricing = (props) => {
             setClassNames({
                 h1: 'md:text-4xl text-2xl text-center text-stis-100 font-bold'
             })
+        }else if(page === 'utbk'){
+            setClassNames({
+                h1: 'md:text-4xl text-2xl text-center text-utbk-100 font-bold'
+            })
         }
     }, [])
     return(

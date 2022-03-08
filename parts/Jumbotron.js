@@ -29,6 +29,11 @@ const Jumbotron = (props) => {
                 h1: 'text-stis-100 font-bold md:text-4xl text-2xl uppercase',
                 h2: 'text-stis-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
             })
+        }else if(page === 'utbk'){
+            setClassNames({
+                h1: 'text-utbk-100 font-bold md:text-4xl text-2xl uppercase',
+                h2: 'text-utbk-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
+            })
         }
     }, [])
     const sliderSettings = {
