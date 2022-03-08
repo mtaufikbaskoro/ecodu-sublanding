@@ -24,6 +24,11 @@ const Jumbotron = (props) => {
                 h1: 'text-sekdin-100 font-bold md:text-4xl text-2xl uppercase',
                 h2: 'text-sekdin-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
             })
+        }else if(page === 'stis'){
+            setClassNames({
+                h1: 'text-stis-100 font-bold md:text-4xl text-2xl uppercase',
+                h2: 'text-stis-100 font-bold md:text-4xl text-2xl px-8 leading-relaxed text-center xl:text-left'
+            })
         }
     }, [])
     const sliderSettings = {

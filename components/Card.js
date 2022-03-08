@@ -17,6 +17,10 @@ const Card = (props) => {
             setClassNames({
                 div: 'xl:w-lesson-card md:w-[200px] mx-2 md:mx-0 flex flex-col items-center justify-start gap-6 bg-sekdin-100 text-additional-color-200 hover:bg-additional-color-200 hover:text-sekdin-100 border-4 hover:border-4 hover:border-sekdin-200 transition ease-in-out rounded-md'
             })
+        }else if(page === 'stis'){
+            setClassNames({
+                div: 'xl:w-lesson-card md:w-[200px] mx-2 md:mx-0 flex flex-col items-center justify-start gap-6 bg-stis-100 text-additional-color-200 hover:bg-additional-color-200 hover:text-stis-100 border-4 hover:border-4 hover:border-stis-200 transition ease-in-out rounded-md'
+            }) 
         }
     }, [])
     return(
