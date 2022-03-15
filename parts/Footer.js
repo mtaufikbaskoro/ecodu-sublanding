@@ -30,7 +30,7 @@ const Footer = () => {
                         <div className="w-[32px] h-[32px]">
                             <Image src="/assets/kontak_email.png" width={32} height={32} alt="kontak_email" />
                         </div>
-                        <p className="md:text-md text-sm">admin@ecodu.id</p>
+                        <p className="md:text-md text-[10px]">admin@ecodu.id</p>
                     </a>
                     <a href="https://bit.ly/gabung-ecodu" className="flex gap-3 items-center hover:bg-additional-color-400 py-2 px-2 transition ease-in-out">
                         <div className="w-[32px] h-[32px]">
